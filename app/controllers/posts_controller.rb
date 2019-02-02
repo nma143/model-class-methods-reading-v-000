@@ -11,7 +11,7 @@ class PostsController < ApplicationController
       if params[:date] == "Today"
         @posts = Post.from_today
       else
-      @posts = Post.old_news
+        @posts = Post.old_news
       end
     else
       # if no filters are applied, show all posts
